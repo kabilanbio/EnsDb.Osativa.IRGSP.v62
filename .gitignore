@@ -7,3 +7,5 @@
 "*.tar.gz" 
 "*.sqlite" 
 "inst/extdata/*.sqlite" 
+"*.sqlite" 
+"inst/extdata/*.sqlite" 
