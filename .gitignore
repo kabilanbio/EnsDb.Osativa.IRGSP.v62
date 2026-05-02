@@ -1,0 +1,7 @@
+"*.sqlite" 
+"inst/extdata/*.sqlite" 
+".Rproj.user/" 
+".Rhistory" 
+".RData" 
+".Ruserdata" 
+"*.tar.gz" 
