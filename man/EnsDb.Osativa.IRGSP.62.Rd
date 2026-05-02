@@ -5,7 +5,7 @@
 \title{EnsDb object for Oryza sativa IRGSP-1.0 Release 62}
 \value{
 An \code{EnsDb} object providing access to the rice annotation
-database.
+    database.
 }
 \description{
 This object provides gene, transcript and exon annotations for the
@@ -20,8 +20,8 @@ Use \code{EnsDb.Osativa.IRGSP.62} directly after
 \examples{
 library(EnsDb.Osativa.IRGSP.62)
 edb <- EnsDb.Osativa.IRGSP.62
-# Retrieve the first 5 genes
-head(genes(edb))
+# Retrieve the first 3 genes
+head(genes(edb), 3)
 
 }
 \keyword{data}

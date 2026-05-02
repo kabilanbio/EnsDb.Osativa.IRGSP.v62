@@ -1,5 +1,5 @@
 #' @name EnsDb.Osativa.IRGSP.62
-#'
+#' 
 #' @title EnsDb object for Oryza sativa IRGSP-1.0 Release 62
 #'
 #' @description
@@ -12,19 +12,18 @@
 #' Use \code{EnsDb.Osativa.IRGSP.62} directly after
 #' \code{library(EnsDb.Osativa.IRGSP.62)}.
 #'
-#' @return
-#' An \code{EnsDb} object providing access to the rice annotation
-#' database.
+#' @return An \code{EnsDb} object providing access to the rice annotation
+#'     database.
 #'
 #' @examples
 #' library(EnsDb.Osativa.IRGSP.62)
 #' edb <- EnsDb.Osativa.IRGSP.62
-#' # Retrieve the first 5 genes
-#' head(genes(edb))
+#' # Retrieve the first 3 genes
+#' head(genes(edb), 3)
 #'
 #' @import ensembldb
 #' @importFrom DBI dbDisconnect
 #' @export
-#'
+#' 
 #' @keywords data
 NULL

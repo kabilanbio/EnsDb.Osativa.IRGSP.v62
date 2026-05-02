@@ -1,5 +1,7 @@
-.ZENODO_URL <- "https://zenodo.org/records/19987906/files/EnsDb.Osativa.v62.sqlite?download=1"
-
+.ZENODO_URL <- paste0(
+  "https://zenodo.org/records/19987906/files/",
+  "EnsDb.Osativa.v62.sqlite?download=1"
+)
 .datacache <- new.env(hash = TRUE, parent = emptyenv())
 
 .onLoad <- function(libname, pkgname) {

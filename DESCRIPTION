@@ -8,11 +8,14 @@ Description: Provides the Ensembl Plants gene, transcript, and exon
 Version: 0.99.0
 Authors@R: c(
     person("Dwijesh Chandra", "Mishra", role = "aut",
-           email = "dwij.mishra@gmail.com"),
-    person("Kabilan", "S", role = "cre",
-           email = "kabilan151414@gmail.com"),
-    person("ICAR-IARI", role = "fnd",
-           email = "info@iari.res.in"))
+           email = "dwij.mishra@gmail.com",
+           comment = c(ORCID = "0000-0002-3327-6156")),
+    person("Kabilan", "S", role = c("aut","cre"),
+           email = "kabilan151414@gmail.com",
+           comment = c(ORCID = "0009-0002-9422-0938")),
+    person("Sharanbasappa D", "Madival", role = c("aut"),
+           email = "smadival509@gmail.com"),
+    person("ICAR-IARI", role = "fnd", email = "info@iari.res.in"))
 Depends:
     R (>= 4.5.0),
     ensembldb
@@ -28,7 +31,7 @@ Suggests:
 Encoding: UTF-8
 VignetteBuilder: knitr
 License: Artistic-2.0
-biocViews: AnnotationData, Oryza_sativa
+biocViews: AnnotationData, FunctionalAnnotation, Oryza_sativa
 URL: https://github.com/kabilanbio/EnsDb.Osativa.IRGSP.62
 BugReports: https://github.com/kabilanbio/EnsDb.Osativa.IRGSP.62/issues
 RoxygenNote: 7.3.3

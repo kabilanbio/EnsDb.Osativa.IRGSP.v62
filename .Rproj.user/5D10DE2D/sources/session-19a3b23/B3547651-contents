@@ -1,3 +1,5 @@
+library(testthat)
+
 test_that("EnsDb object loads correctly", {
   edb <- EnsDb.Osativa.IRGSP.62
   expect_s4_class(edb, "EnsDb")
