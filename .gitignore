@@ -1,17 +1,7 @@
-"*.sqlite" 
-"inst/extdata/*.sqlite" 
-".Rproj.user/" 
-".Rhistory" 
-".RData" 
-".Ruserdata" 
-"*.tar.gz" 
-"*.sqlite" 
-"inst/extdata/*.sqlite" 
-"*.sqlite" 
-"inst/extdata/*.sqlite" 
-<<<<<<< Updated upstream
-"*.sqlite" 
-"inst/extdata/*.sqlite" 
-=======
 .Rproj.user
->>>>>>> Stashed changes
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
+*.Rproj
