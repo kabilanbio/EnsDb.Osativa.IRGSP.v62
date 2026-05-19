@@ -1,3 +1,31 @@
+#' @name EnsDb.Osativa.IRGSP.v62
+#' 
+#' @title EnsDb object for Oryza sativa IRGSP-1.0 Release 62
+#'
+#' @description
+#' This object provides gene, transcript and exon annotations for the
+#' rice genome IRGSP‑1.0 based on Ensembl release 62.  Gene IDs follow
+#' the RAP‑DB nomenclature (`OsXXgXXXXXXX`).  MSU v7.0 functional
+#' descriptions are stored in the `gene_name` column.
+#'
+#' The object is automatically loaded when the package is attached.
+#' Use \code{EnsDb.Osativa.IRGSP.v62} directly after
+#' \code{library(EnsDb.Osativa.IRGSP.v62)}.
+#'
+#' @return An \code{EnsDb} object providing access to the rice annotation
+#'     database.
+#'
+#' @examples
+#' library(EnsDb.Osativa.IRGSP.v62)
+#' edb <- EnsDb.Osativa.IRGSP.v62
+#' # Retrieve the first 3 genes
+#' head(genes(edb), 3)
+#'
+#' @import ensembldb
+#' @importFrom DBI dbDisconnect
+#' @keywords data
+NULL
+
 # zzz.R
 
 .ZENODO_URL <- paste0(
@@ -16,7 +44,7 @@
   rid <- BiocFileCache::bfcquery(bfc, "EnsDb.Osativa.v62.sqlite", "rname")$rid
   if (!length(rid)) {
     ## Not cached – download from Zenodo
-    message("Downloading EnsDb database from Zenodo...")
+    packageStartupMessage("Downloading EnsDb database from Zenodo...")
     rid <- names(BiocFileCache::bfcadd(bfc, "EnsDb.Osativa.v62.sqlite", .ZENODO_URL))
   }
   

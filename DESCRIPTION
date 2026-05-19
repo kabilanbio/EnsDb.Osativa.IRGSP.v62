@@ -20,7 +20,6 @@ Depends:
     R (>= 4.5.0),
     ensembldb
 Imports:
-    ensembldb,
     BiocFileCache,
     DBI
 Suggests:
