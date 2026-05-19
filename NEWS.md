@@ -1,3 +1,3 @@
-* EnsDb.Osativa.IRGSP.v62 0.99.0 (May 3, 2026)
+# EnsDb.Osativa.IRGSP.v62 0.99.0 
 
-- First release of the Ensembl‑based rice annotation package.
+- First release of the Ensembl‑based rice annotation package (May 3, 2026).
