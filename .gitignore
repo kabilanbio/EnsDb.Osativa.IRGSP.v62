@@ -9,5 +9,9 @@
 "inst/extdata/*.sqlite" 
 "*.sqlite" 
 "inst/extdata/*.sqlite" 
+<<<<<<< Updated upstream
 "*.sqlite" 
 "inst/extdata/*.sqlite" 
+=======
+.Rproj.user
+>>>>>>> Stashed changes
