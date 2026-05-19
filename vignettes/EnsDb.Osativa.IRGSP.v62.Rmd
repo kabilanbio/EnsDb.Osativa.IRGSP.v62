@@ -23,14 +23,14 @@ This package delivers Ensembl‑based gene, transcript, and exon annotations for
 From the source tarball:
 
 ```{r, eval = FALSE}
-install.packages("EnsDb.Osativa.IRGSP.62", repos = NULL, type = "source")
+install.packages("EnsDb.Osativa.IRGSP.v62", repos = NULL, type = "source")
 ```
 
 # Loading the package
 
 ```{r loading}
-library(EnsDb.Osativa.IRGSP.62)
-edb <- EnsDb.Osativa.IRGSP.62
+library(EnsDb.Osativa.IRGSP.v62)
+edb <- EnsDb.Osativa.IRGSP.v62
 ```
 
 # Available columns and filters

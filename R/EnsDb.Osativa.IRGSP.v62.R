@@ -1,4 +1,4 @@
-#' @name EnsDb.Osativa.IRGSP.62
+#' @name EnsDb.Osativa.IRGSP.v62
 #' 
 #' @title EnsDb object for Oryza sativa IRGSP-1.0 Release 62
 #'

@@ -1,4 +1,4 @@
-Package: EnsDb.Osativa.IRGSP.62
+Package: EnsDb.Osativa.IRGSP.v62
 Title: Ensembl-Based Annotation for Oryza sativa IRGSP-1.0 (Release 62)
 Description: Provides the Ensembl Plants gene, transcript, and exon
     annotations for the rice genome assembly IRGSP-1.0, based on the
