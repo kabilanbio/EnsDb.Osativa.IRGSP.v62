@@ -16,13 +16,16 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
 # Introduction
 
-This package delivers Ensembl‑based gene, transcript, and exon annotations for *Oryza sativa* (rice) IRGSP‑1.0, Release 62. Gene IDs follow the **RAP‑DB** nomenclature (`OsXXgXXXXXXX`). MSU v7.0 functional descriptions are stored in the `gene_name` column, and NCBI Entrez Gene IDs in `entrezid`.
+This package delivers Ensembl‑based gene, transcript, and exon annotations for 
+*Oryza sativa* (rice) IRGSP‑1.0, Release 62. Gene IDs follow the **RAP‑DB** 
+nomenclature (`OsXXgXXXXXXX`). MSU v7.0 functional descriptions are stored in 
+the `gene_name` column, and NCBI Entrez Gene IDs in `entrezid`.
 
 # Installation
 
 From the source tarball:
 
-```{r, eval = FALSE}
+```{r installing, eval = FALSE}
 install.packages("EnsDb.Osativa.IRGSP.v62", repos = NULL, type = "source")
 ```
 
@@ -76,7 +79,8 @@ head(exon_gr)
 
 # Working with chromosome names
 
-The database stores chromosome names as bare numbers (`1`, `2`, …). To add the UCSC‑style `chr` prefix:
+The database stores chromosome names as bare numbers (`1`, `2`, …). 
+To add the UCSC‑style `chr` prefix:
 
 ```{r chromosomes}
 gene_gr <- genes(edb)
