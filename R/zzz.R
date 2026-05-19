@@ -13,7 +13,8 @@
   rid <- BiocFileCache::bfcquery(bfc, "EnsDb.Osativa.v62.sqlite", "rname")$rid
   if (!length(rid)) {
     ## Not cached yet – download from Zenodo
-    rid <- names(BiocFileCache::bfcadd(bfc, "EnsDb.Osativa.v62.sqlite", .ZENODO_URL))
+    rid <- names(BiocFileCache::bfcadd(bfc, "EnsDb.Osativa.v62.sqlite", 
+                                       .ZENODO_URL))
   }
   dbfile <- BiocFileCache::bfcrpath(bfc, rids = rid)
 
