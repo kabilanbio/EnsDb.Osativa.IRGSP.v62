@@ -9,8 +9,8 @@
 #' descriptions are stored in the `gene_name` column.
 #'
 #' The object is automatically loaded when the package is attached.
-#' Use \code{EnsDb.Osativa.IRGSP.62} directly after
-#' \code{library(EnsDb.Osativa.IRGSP.62)}.
+#' Use \code{EnsDb.Osativa.IRGSP.v62} directly after
+#' \code{library(EnsDb.Osativa.IRGSP.v62)}.
 #'
 #' @return An \code{EnsDb} object providing access to the rice annotation
 #'     database.
