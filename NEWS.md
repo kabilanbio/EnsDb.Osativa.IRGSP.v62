@@ -1,3 +1,5 @@
-# EnsDb.Osativa.IRGSP.v62 0.99.0 
+# EnsDb.Osativa.IRGSP.v62 0.99.0
 
-- First release of the Ensembl‑based rice annotation package (May 3, 2026).
+* First release based on Ensembl Plants release 62.
+* Gene IDs follow RAP-DB format.
+* MSU v7.0 functional annotations included.
