@@ -18,8 +18,8 @@ Use \code{EnsDb.Osativa.IRGSP.62} directly after
 \code{library(EnsDb.Osativa.IRGSP.62)}.
 }
 \examples{
-library(EnsDb.Osativa.IRGSP.62)
-edb <- EnsDb.Osativa.IRGSP.62
+library(EnsDb.Osativa.IRGSP.v62)
+edb <- EnsDb.Osativa.IRGSP.v62
 # Retrieve the first 3 genes
 head(genes(edb), 3)
 
