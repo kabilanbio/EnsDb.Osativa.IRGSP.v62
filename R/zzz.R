@@ -26,6 +26,13 @@
 #' @keywords data
 NULL
 
+
+# Dummy assignment for roxygen2 to export the symbol;
+# the real EnsDb object is attached by .onLoad()
+#' @export
+EnsDb.Osativa.IRGSP.v62 <- NULL
+
+
 # zzz.R
 
 .ZENODO_URL <- paste0(
