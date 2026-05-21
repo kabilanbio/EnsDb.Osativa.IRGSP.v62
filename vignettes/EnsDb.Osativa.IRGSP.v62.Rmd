@@ -64,19 +64,6 @@ genes(edb, filter = GeneIdFilter("Os01g0100100"))
 genes(edb, filter = GeneBiotypeFilter("protein_coding"))
 ```
 
-# Retrieve transcripts for a specific gene
-
-```{r retrieve_gene}
-transcripts(edb, filter = GeneIdFilter("Os01g0100100"))
-```
-
-# Retrieve exons
-
-```{r exon_retrieve}
-exon_gr <- exons(edb)
-head(exon_gr)
-```
-
 # Working with chromosome names
 
 The database stores chromosome names as bare numbers (`1`, `2`, …). 
