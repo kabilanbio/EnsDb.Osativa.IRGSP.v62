@@ -33,12 +33,18 @@ install.packages("EnsDb.Osativa.IRGSP.v62", repos = NULL, type = "source")
 
 ```{r loading}
 library(EnsDb.Osativa.IRGSP.v62)
-edb <- EnsDb.Osativa.IRGSP.v62
+edb <- tryCatch(
+  EnsDb.Osativa.IRGSP.v62,
+  error = function(e) {
+    message("Database not available (maybe offline). Skipping example.")
+    return(NULL)
+  }
+)
 ```
 
 # Available columns and filters
 
-```{r overview}
+```{r overview, eval = !is.null(edb)}
 columns(edb)
 supportedFilters(edb)
 ```
@@ -47,20 +53,20 @@ supportedFilters(edb)
 
 `genes()` returns a `GRanges` object with gene‑level information.
 
-```{r genes}
+```{r genes, eval = !is.null(edb)}
 gene_gr <- genes(edb)
 head(gene_gr)
 ```
 
 # Filter genes by ID
 
-```{r filter_gene}
+```{r filter_gene, eval = !is.null(edb)}
 genes(edb, filter = GeneIdFilter("Os01g0100100"))
 ```
 
 # Filter genes by biotype
 
-```{r filter_gene_biotype}
+```{r filter_gene_biotype, eval = !is.null(edb)}
 genes(edb, filter = GeneBiotypeFilter("protein_coding"))
 ```
 
@@ -69,7 +75,7 @@ genes(edb, filter = GeneBiotypeFilter("protein_coding"))
 The database stores chromosome names as bare numbers (`1`, `2`, …). 
 To add the UCSC‑style `chr` prefix:
 
-```{r chromosomes}
+```{r chromosomes, eval = !is.null(edb)}
 gene_gr <- genes(edb)
 seqlevelsStyle(gene_gr) <- "UCSC"
 seqlevels(gene_gr)
@@ -77,7 +83,7 @@ seqlevels(gene_gr)
 
 Restrict to nuclear chromosomes:
 
-```{r nuclear_chromosomes}
+```{r nuclear_chromosomes, eval = !is.null(edb)}
 library(GenomeInfoDb)
 gene_gr_nuc <- keepStandardChromosomes(gene_gr, pruning.mode = "coarse")
 seqlevels(gene_gr_nuc)
